@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+           <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      <!--===============================================================================================-->
+        <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link rel="manifest" href="manifest.json">
+        <!--===============================================================================================-->
+  
+</head>
+<body style="background-color: #fff;color: #000; position: fixed;">
+  <div id="loading">
+<img src="./img/loader.GIF" alt="loading..." id="loading-image">
+  </div>
+  <div class="desktop">
+    <p>Can't be acess through Destop use mobile</p>
+    <img src="./img/loader.GIF" alt="loading...">
+  </div>
+  <div class="aboutheader"  class="aos-item" data-aos="zoom-in">
+    <div class="name">Hi, I'm <p class="writter2" id="typewritertwo"></p></div>
+    <div class="row">
+      <p class="columnp">Developer</p>
+      <p class="columnp">Designer</p>
+      <p class="columnp">Tech Enthusiast</p>
+    </div>
+      <div>
+   <img src="./img/abtimg.jpg" alt="" width="130px" height="130px" style="border-radius: 20em;position: relative;left: 33%; top: 30px;">
+    </div>
+
+    <p class="writter"><span id="typewriter"></span></p>
+    <li class="icon" style="top: 62%;text-align: center;">
+      <a href="" style="margin-right:10px;"><img src="./img/link.png" width="25px" height="25px"></a>
+     <a href="" style="margin-right:10px;" ><img src="./img/github.png" width="25px" height="25px"></a>
+      <a href="" style="margin-right:17px;" ><img src="./img/boximg.PNG" width="25px" height="25px"></i></a>
+      <a href="" style="margin-right:19px;text-decoration: none;position: absolute;top: -30px;" ><p style="font-size: 25PX;font-weight: 700;font-family: fantasy; color: #2d2626;">CV</p></a>
+    </li>
+    <tr class="aboutmobile">
+    <p class="homeabtintro">Hi! i'm sopiriye jamabo, a Web developer, I build web applications with great user interface, with the latest technologies and frame works, I'm a passionate software developer with 2+ years of experience <i class="fa fa-heart"></i> </p>
+    <button class="contactbutton" id="contactform"><p>Contact me</p></button>
+  
+  </div>
+</div>
+</div>
+    </div>
+    <div id="popupBox">
+      <div class="popupBoxWrapper">
+        <div class="popupBoxContent">
+          <div class="boximg">
+            <ul class="contactic">
+              <table>
+                <tr>
+              <td><li style="margin-left:-60px ;"><a href=""><img src="./img/boximg.PNG" alt="" width="25px" height="25px"> <a href=""></a></li></td>
+              <td><li style="margin-left: 40px;"><a href=""><img src="whatsapp.PNG" alt="" width="21px" height="21px"> <a href=""></a></li></td>
+              <td><li style="margin-left: 70px;"><a href=""><img src="whatsapp.PNG" alt="" width="21px" height="21px"> <a href=""></a></li></td>
+             
+            </tr>
+             
+              </table>
+            </ul>
+            </div>
+         <div class="infoabout" style="line-height: 3.6;"> 
+           <input type="text" placeholder="Name" class="input" style="border-radius: 10px;">
+           <input type="email" placeholder="Email" class="input" style="border-radius: 10px;">
+           <input type="text" placeholder="Message" class="message">
+           <button  >
+             <input type="button" value="Send" >
+             <p id="closebox4">Close</p>
+           </button>
+           <img src="contactimg.png" alt="">
+            </div>
+        </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  <!-- <ul id="menu">
+    <li class="subm">
+      <a href="#" data-tooltip="Home" class="tooltip"><i class="fa fa-home "></i></a>
+    </li>
+    <li class="subm">
+      <a href="Projects.html"  data-tooltip="Projects" class="tooltip"><i class="fa fa-code"></i></a>
+    </li>
+    <li class="subm">
+      <a href="Blog.html" data-tooltip="Blog" class="tooltip"><i class="fa fa-newspaper-o "></i></a>
+    </li>
+    <li class="subm">
+      <a href="contact.html" data-tooltip="Contactme" class="tooltip"><i class="fa fa-phone"></i></a>
+    </li>
+   
+  </ul> -->
+ <!-- scripts -->
+ <script src='core2.js'></script>
+ <script src='core.js'></script>
+ <script type='text/javascript'>
+  const typewritertwo = new Typewritertwo('#typewritertwo', {
+    loop: false,
+  });
+
+  typewritertwo.typeString("Sopiriye")
+    .pauseFor(2500)
+      .start();
+</script>
+  <script type='text/javascript'>
+    const typewriter = new Typewriter('#typewriter', {
+      loop: true,
+    });
+
+    typewriter.typeString('Web Developer')
+      .pauseFor(2500)
+      .deleteAll()
+       .typeString("Tech Enthusiast")
+      .pauseFor(2500)
+      .deleteAll()
+        .start();
+  </script>
+  <script>
+    $(window).load(function() {
+      $('#loading').hide();
+    });
+  </script>
+  <script>
+    //contact js
+  var elpopupBoxFourPosition = document.getElementById('popupBox');
+   var closeclosebox4 = document.getElementById('closebox4');
+  
+  document.getElementById('contactform').addEventListener('click', function(){
+    if(elpopupBoxFourPosition.style.display == 'block')
+      elpopupBoxFourPosition.style.display = 'none';
+    else
+      elpopupBoxFourPosition.style.display = 'block';
+  });
+    
+  // When the user clicks on Click here to close modal
+  closeclosebox4.onclick = function() {
+      elpopupBoxFourPosition.style.display = "none";
+  }
+
+  </script>
+<script src="app.js"></script>
+</body>
+</html>
